@@ -5,6 +5,7 @@ on:
 
 jobs:
   delete-artifacts:
+    if: github.repository == 'mosip/mimoto'
     runs-on: ubuntu-latest
     steps:
       - uses: kolpav/purge-artifacts-action@v1
